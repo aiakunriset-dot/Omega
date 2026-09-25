@@ -18,7 +18,7 @@ AI reads this file to identify the active strategy before starting Stage 1.
 ## Format entry
 
 ```markdown
-### Strategy: [nama]
+### Strategy: [name]
 - **Status:** [legend value]
 - **Hypothesis:** one sentence — what edge is exploited
 - **Market:** [aset/market target]
@@ -43,7 +43,7 @@ AI reads this file to identify the active strategy before starting Stage 1.
 
 <!-- Add strategies below when considered. Empty in V1.0. -->
 
-<!-- Contoh:
+<!-- Example:
 ### Strategy: momentum-btc-daily
 - **Status:** idea
 - **Hypothesis:** BTC shows positive momentum for 3-5 days after a high-volume breakout

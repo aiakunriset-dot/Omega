@@ -7,7 +7,7 @@ Change only with human approval and an entry in changelog.md.
 
 | Convention | Value |
 |----------|-------|
-| Timezone | UTC — semua timestamp |
+| Timezone | UTC — all timestamps |
 | Price | Adjusted close, unless otherwise stated |
 | Missing data | Drop row — never silently interpolate |
 | OHLCV format | `timestamp, open, high, low, close, volume` |
@@ -15,7 +15,7 @@ Change only with human approval and an entry in changelog.md.
 
 ## Backtesting
 
-| Requirement | Nilai |
+| Requirement | Value |
 |-------------|-------|
 | Minimum data history | 3 years |
 | Walk-forward | Required — no in-sample-only |
@@ -64,8 +64,8 @@ No new library without discussion and an entry in changelog.md.
 | Item | Convention | Example |
 |------|----------|--------|
 | Strategy file | `snake_case.py` | `momentum_btc_daily.py` |
-| Output markdown | `YYYY-MM-DD-nama.md` | `2026-09-23-research-brief.md` |
-| Folder stage | `NN_nama` | `01_research` |
+| Output markdown | `YYYY-MM-DD-name.md` | `2026-09-23-research-brief.md` |
+| Folder stage | `NN_name` | `01_research` |
 | Variable | `snake_case` | `sharpe_ratio` |
 | Constant | `UPPER_SNAKE` | `MIN_SHARPE` |
 

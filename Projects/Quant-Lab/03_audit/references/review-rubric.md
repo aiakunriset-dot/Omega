@@ -33,8 +33,8 @@ The metrics table must have these columns:
 
 ```
 required_table_columns:
-  - "Metrik"
-  - "Nilai"
+  - "Metric"
+  - "Value"
   - "Threshold"
   - "Status"
 ```
