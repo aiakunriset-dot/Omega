@@ -1,0 +1,33 @@
+# Secrets — JANGAN PERNAH commit
+_shared/secrets.env
+**/.env
+**/*.env
+*.env
+
+# Python virtual environment
+.venv/
+venv/
+__pycache__/
+*.pyc
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/settings.json
+.vscode/*.log
+*.swp
+
+# Backup folder (managed manually, not via Git)
+_backups/
+_backups/*
+!_backups/README.md
+
+# Logs
+_logs/
+
+# ICM CLI cache
+.icm/
