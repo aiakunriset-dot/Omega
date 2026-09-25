@@ -9,8 +9,8 @@ to run without modification.
 ## Prerequisite check
 
 Before starting, verify:
-- `../01_research/output/research-brief.md` ada ✓
-- `../01_research/output/approved-research-YYYY-MM-DD.md` ada ✓
+- `../01_research/output/research-brief.md` exists ✓
+- `../01_research/output/approved-research-YYYY-MM-DD.md` exists ✓
 
 If either is missing, stop. Return to stage 01_research.
 
@@ -42,7 +42,7 @@ The research brief is not approved until a file matching
 
 ```python
 """
-Strategy: [nama-strategi]
+Strategy: [strategy-name]
 Brief: ../01_research/output/research-brief.md
 Date: YYYY-MM-DD
 Author: Omega Quant-Lab
@@ -60,7 +60,7 @@ PARAM_NAME: float = value  # with unit and range comment
 
 def compute_signals(data: pd.DataFrame) -> pd.Series:
     """
-    Entry/exit signals sesuai brief section 'Entry Signal'.
+    Entry/exit signals per brief section 'Entry Signal'.
     Returns: pd.Series of {1: long, -1: short, 0: flat}
     """
     ...
@@ -83,7 +83,7 @@ def run_strategy(data: pd.DataFrame) -> pd.DataFrame:
 
 | File | Description |
 |------|-----------|
-| `output/[strategy-name].py` | Implementasi strategi |
+| `output/[strategy-name].py` | Strategy implementation |
 | `output/test_[strategy-name].py` | Test file (min 5 tests) |
 | `output/question-YYYY-MM-DD.md` | If the brief is ambiguous |
 
@@ -100,7 +100,7 @@ Before stage 03_audit begins:
 4. Check for global state or hardcoded paths
 5. If approved, create `output/approved-development-YYYY-MM-DD.md`:
    ```
-   Approved by: [nama]
+   Approved by: [name]
    Date: YYYY-MM-DD
    Tests: [N]/[N] passed
    Lookahead check: clean

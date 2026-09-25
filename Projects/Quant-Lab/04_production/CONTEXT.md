@@ -9,9 +9,9 @@ complete enough for anyone to run without additional explanation.
 ## Prerequisite check (HARD GATE — no exceptions)
 
 Before starting, verify that all three files EXIST:
-- `../03_audit/output/audit-report.md` berisi kata `**PASS**` ✓
-- `../03_audit/output/approved-audit-YYYY-MM-DD.md` ada ✓
-- `../02_development/output/[strategy-name].py` ada ✓
+- `../03_audit/output/audit-report.md` contains `**PASS**` ✓
+- `../03_audit/output/approved-audit-YYYY-MM-DD.md` exists ✓
+- `../02_development/output/[strategy-name].py` exists ✓
 
 If any is missing or audit-report does not contain PASS:
 → Stop. Return to stage 03_audit. No exceptions.
@@ -44,12 +44,12 @@ If any is missing or audit-report does not contain PASS:
 ## Output format: monitoring.md
 
 ```markdown
-# Monitoring Plan: [nama-strategi]
+# Monitoring Plan: [strategy-name]
 Date: YYYY-MM-DD
 
 ## Metrics to Monitor (Daily)
 
-| Metrik | Alert Threshold | Action |
+| Metric | Alert Threshold | Action |
 |--------|-----------------|--------|
 | Daily PnL | < -3% | Review immediately |
 | Rolling 30d Sharpe | < 0.5 | Human review |
@@ -70,7 +70,7 @@ Date: YYYY-MM-DD
 ## Output format: rollback.md
 
 ```markdown
-# Rollback Procedure: [nama-strategi]
+# Rollback Procedure: [strategy-name]
 
 ## Trigger Conditions (any one sufficient)
 - Live max drawdown exceeds XX% (audit threshold was 20%)
@@ -93,7 +93,7 @@ If retiring: update strategies.md status = archived
 
 | File/Folder | Description |
 |-------------|-----------|
-| `output/package/` | Deployment package (kode + tests + README + requirements) |
+| `output/package/` | Deployment package (code + tests + README + requirements) |
 | `output/monitoring.md` | Monitoring plan with alert thresholds |
 | `output/rollback.md` | Rollback procedure |
 | `output/deployed.md` | Deployment summary — pipeline complete |
@@ -101,21 +101,21 @@ If retiring: update strategies.md status = archived
 ## Output format: deployed.md
 
 ```markdown
-# Deployed: [nama-strategi]
+# Deployed: [strategy-name]
 Date packaged: YYYY-MM-DD
 Omega pipeline: COMPLETE
 
 ## Summary
-- Strategy: [nama]
-- Audit verdict: PASS (lihat ../03_audit/output/audit-report.md)
+- Strategy: [strategy name]
+- Audit verdict: PASS (see ../03_audit/output/audit-report.md)
 - Package: output/package/
 - Monitoring: output/monitoring.md
 - Rollback: output/rollback.md
 
 ## Live Status
-- Status: READY (belum live, menunggu keputusan human)
-- Deployed live: [YYYY-MM-DD / belum]
-- Live account: [nama akun / belum]
+- Status: READY (not yet live, awaiting human decision)
+- Deployed live: [YYYY-MM-DD / not yet]
+- Live account: [account name / not yet]
 
 ## Notes
 [Notes from the human]

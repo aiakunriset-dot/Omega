@@ -31,7 +31,7 @@ for stage 02_development to implement without additional questions.
 ## Output format: research-brief.md
 
 ```markdown
-# Research Brief: [nama-strategi]
+# Research Brief: [strategy-name]
 Date: YYYY-MM-DD
 Status: awaiting-approval
 
@@ -50,12 +50,12 @@ Status: awaiting-approval
 [Specific and testable entry conditions]
 
 ## Exit Signal
-[Kondisi exit: take profit, stop loss, time-based]
+[Exit conditions: take profit, stop loss, time-based]
 
 ## Initial Parameters
 | Parameter | Value | Sweep range | Rationale |
 |-----------|-------|-------------------|-----------|
-| [nama] | [nilai] | [min–max] | [mengapa] |
+| [name] | [value] | [min–max] | [rationale] |
 
 ## Risk Management
 - Position size: [% portfolio per trade]
@@ -64,7 +64,7 @@ Status: awaiting-approval
 - Max drawdown limit: [% — sesuai conventions.md]
 
 ## Data Requirements
-- Minimum history: [N tahun]
+- Minimum history: [N years]
 - Data source: [Binance API / Yahoo Finance / dll]
 - Frequency: [OHLCV 1h / dll]
 
@@ -100,11 +100,11 @@ Before stage 02_development begins:
 4. Verify: does risk management comply with conventions.md?
 5. If approved, create `output/approved-research-YYYY-MM-DD.md` containing:
    ```
-   Approved by: [nama]
+   Approved by: [name]
    Date: YYYY-MM-DD
-   Strategy: [nama strategi]
+   Strategy: [strategy name]
    Approved for: development
-  Notes: [additional notes if any]
+   Notes: [additional notes if any]
    ```
 6. Update `../_shared/strategies.md`: status `in-research` → `in-development`
 

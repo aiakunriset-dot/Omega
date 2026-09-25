@@ -9,8 +9,8 @@ There is no grey area — every metric has a clear threshold.
 ## Prerequisite check
 
 Before starting, verify:
-- `../02_development/output/[strategy-name].py` ada ✓
-- `../02_development/output/approved-development-YYYY-MM-DD.md` ada ✓
+- `../02_development/output/[strategy-name].py` exists ✓
+- `../02_development/output/approved-development-YYYY-MM-DD.md` exists ✓
 
 If either is missing, stop. Return to stage 02_development.
 
@@ -21,7 +21,7 @@ If either is missing, stop. Return to stage 02_development.
 - `../02_development/output/test_[strategy-name].py` — test suite
 
 **Reference** (stable):
-- `../_shared/conventions.md` — threshold metrik PASS/FAIL
+- `../_shared/conventions.md` — metric thresholds PASS/FAIL
 - `../01_research/output/research-brief.md` — hypothesis to validate
 - `../../_shared/rules.md` — global rules
 
@@ -34,9 +34,9 @@ If either is missing, stop. Return to stage 02_development.
   - Calculate metrics on the OOS period only (in-sample is for fitting only)
 4. Calculate all metrics from conventions.md on OOS data
 5. Run stress tests:
-   - Periode high volatility (jika ada dalam data)
-   - Periode bear market (jika relevan)
-   - Parameter sensitivity: ubah setiap parameter ±20%, amati degradasi
+   - High volatility period (if present in data)
+   - Bear market period (if relevant)
+   - Parameter sensitivity: change each parameter ±20%, observe degradation
 6. Check for overfitting: how many parameters versus trades?
 7. Write `output/audit-report.md` with all results
 8. Set the verdict: PASS if ALL thresholds are met, FAIL if any are not
@@ -44,7 +44,7 @@ If either is missing, stop. Return to stage 02_development.
 ## Output format: audit-report.md
 
 ```markdown
-# Audit Report: [nama-strategi]
+# Audit Report: [strategy-name]
 Date: YYYY-MM-DD
 Verdict: **PASS** / **FAIL**
 
@@ -62,7 +62,7 @@ Code: ../02_development/output/[strategy-name].py
 
 ## Metrics (Out-of-Sample)
 
-| Metrik | Nilai | Threshold | Status |
+| Metric | Value | Threshold | Status |
 |--------|-------|-----------|--------|
 | Sharpe Ratio | X.XX | ≥ 1.0 | PASS/FAIL |
 | Max Drawdown | XX.X% | ≤ 20% | PASS/FAIL |
@@ -92,14 +92,14 @@ Code: ../02_development/output/[strategy-name].py
 - Assessment: [OK / CONCERN / FAIL]
 
 ## Issues Found
-[Semua concern, bahkan jika overall PASS]
+[All concerns, even if overall PASS]
 
 ## Verdict Justification
 **[PASS / FAIL]**
 
-[Paragraf penjelasan: mengapa verdict ini diberikan]
+[Explanatory paragraph: why this verdict was given]
 
-[Jika FAIL: Return to stage [01/02] — specific issue: ...]
+[If FAIL: Return to stage [01/02] — specific issue: ...]
 ```
 
 ## Outputs
@@ -123,12 +123,12 @@ Before stage 04_production begins (ONLY if the verdict is PASS):
 5. Read "Issues Found" — are any concerns unacceptable?
 6. If approved, create `output/approved-audit-YYYY-MM-DD.md`:
    ```
-   Approved by: [nama]
+   Approved by: [name]
    Date: YYYY-MM-DD
    Verdict: PASS
-   Strategy: [nama]
+   Strategy: [strategy name]
    Ready for: production packaging
-  Notes: [notes]
+   Notes: [notes]
    ```
 
 ## Fail behavior
@@ -139,7 +139,7 @@ Before stage 04_production begins (ONLY if the verdict is PASS):
   → Note: "Test suite failed — return to 02_development"
   → Stop. Do not continue to backtesting.
 
-- Jika backtest gagal dijalankan (data error, code error):
+- If backtest fails to run (data error, code error):
   → Log to `../../_shared/errors.md` (R1 format)
   → Save partial results to `output/audit-data/partial-YYYY-MM-DD/`
   → Write `output/audit-report.md` with a FAIL verdict and technical reason
