@@ -10,6 +10,12 @@ Append-only log of structural changes. **Newest entry at top.**
 - Impact: which folders/files affected
 ```
 
+## [2026-09-25] v1.2 — OmniRoute MCP connected
+- MCP server: omniroute (110 tools, stdio transport)
+- Location: Local scope, project C:\Omega
+- Config: C:\Users\Administrator\.claude.json
+- Status: connected
+
 ## [2026-09-25] v1.1 — Refinement based on M5-M6 usage
 - Changed: Added an explicit research-brief revision workflow after human rejection
 - Changed: Clarified development prerequisites and approval handoff requirements

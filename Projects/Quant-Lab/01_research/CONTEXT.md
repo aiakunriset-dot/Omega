@@ -132,3 +132,24 @@ Before stage 02_development begins:
   → Stop and wait for the human's answer.
 
 - **Under no circumstances may files be deleted. Do not overwrite without a backup.**
+
+## Revision workflow
+
+When human rejects a research brief:
+
+1. Human creates `output/rejected-YYYY-MM-DD-{strategy}.md`
+  containing specific rejection reasons.
+2. AI reads the rejection file before any new work.
+3. AI updates `research-brief.md` addressing each rejection point.
+4. AI does NOT restart from scratch unless rejection says so.
+5. Iteration limit: 3 revisions per strategy.
+6. After 3 rejections without approval:
+  - Mark strategy as "failed" in `../_shared/strategies.md`
+  - Archive brief to `output/archived/`
+  - Move to next strategy.
+
+Approval file format (human-created):
+- `approved-research-YYYY-MM-DD-{strategy}.md`
+
+Both approval and rejection files must exist in `output/` before
+stage 02 can begin.
