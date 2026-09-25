@@ -31,3 +31,6 @@ _logs/
 
 # ICM CLI cache
 .icm/
+
+# Personal AI tool configs
+.aider.conf.yml
