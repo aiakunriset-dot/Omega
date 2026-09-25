@@ -5,10 +5,10 @@ Patterns proven effective through actual use. Evolves over time.
 ## Format
 
 ```markdown
-### Pattern: [nama pola]
-- **Context:** kapan pola ini berlaku
-- **Pattern:** deskripsi pola
-- **Why it works:** alasan efektif
+### Pattern: [pattern name]
+- **Context:** when this pattern applies
+- **Pattern:** pattern description
+- **Why it works:** reason it is effective
 - **First seen:** YYYY-MM-DD in [project/stage]
 - **Verified in:** [list of confirming projects]
 ```

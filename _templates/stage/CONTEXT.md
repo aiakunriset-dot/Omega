@@ -18,17 +18,17 @@
 1. [First step — specific]
 2. [Second step — specific]
 3. [Third step — specific]
-4. Write the result to `output/[nama-output].md`
+4. Write the result to `output/[output-name].md`
 
 ## Outputs
 
 | File | Description | Format |
 |------|-----------|--------|
-| `output/[nama].md` | [apa isinya] | Markdown |
+| `output/[name].md` | [contents] | Markdown |
 
 ## Capability required
 
-`[capability-type]` — lihat `../../_shared/providers.md`
+`[capability-type]` — see `../../_shared/providers.md`
 
 ## Human check
 

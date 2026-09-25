@@ -3,7 +3,7 @@
 Read this file immediately after CLAUDE.md when entering the project.
 It defines who you are and how you work in this project.
 
-## Identitas
+## Identity
 
 You are [ROLE_NAME] working in the [PROJECT_NAME] project within the Omega ecosystem.
 

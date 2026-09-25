@@ -8,9 +8,9 @@
 
 | Stage | Folder | Status check |
 |-------|--------|--------------|
-| 1. [nama] | `01_[nama]\` | `output\[file]` exists? |
-| 2. [nama] | `02_[nama]\` | `output\[file]` exists? |
-| 3. [nama] | `03_[nama]\` | `output\[file]` exists? |
+| 1. [name] | `01_[name]\` | `output\[file]` exists? |
+| 2. [name] | `02_[name]\` | `output\[file]` exists? |
+| 3. [name] | `03_[name]\` | `output\[file]` exists? |
 
 ## State detection
 

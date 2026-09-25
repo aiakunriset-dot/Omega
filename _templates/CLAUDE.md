@@ -17,8 +17,8 @@ You are in the [PROJECT_NAME] project. Read SOUL.md and CONTEXT.md first.
 
 | Stage | Folder | Generated output |
 |-------|--------|------------------------|
-| 1. [nama stage] | `01_[nama]\` | `output\[file].md` |
-| 2. [nama stage] | `02_[nama]\` | `output\[file].md` |
+| 1. [stage name] | `01_[name]\` | `output\[file].md` |
+| 2. [stage name] | `02_[name]\` | `output\[file].md` |
 
 ## Human Gates
 

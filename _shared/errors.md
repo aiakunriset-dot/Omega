@@ -17,7 +17,7 @@ Error log across projects. The next AI must read this before starting.
 
 - AI drafts → human approves → then append
 - Entries must not be deleted (append-only)
-- Project-specific errors → record them in `Projects\[nama]\_shared\errors.md`
+- Project-specific errors → record them in `Projects\[name]\_shared\errors.md`
 - Errors likely to recur across projects → record them here
 
 ---

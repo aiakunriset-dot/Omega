@@ -5,11 +5,11 @@ Contradictions across projects that need to be resolved.
 ## Format
 
 ```markdown
-### Conflict: [deskripsi]
+### Conflict: [description]
 - **Project A:** [project] states [X]
 - **Project B:** [project] states [Y]
 - **Impact:** what is affected
-- **Status:** `unresolved` | `resolved: [keputusan]`
+- **Status:** `unresolved` | `resolved: [decision]`
 - **Date found:** YYYY-MM-DD
 ```
 
