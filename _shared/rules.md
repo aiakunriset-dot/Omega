@@ -5,31 +5,31 @@ Rules are added from real experience, not designed from scratch.
 
 ---
 
-## R1 — Log Before Fix (Operational)
+## R1 — Log Before Fix
 
 Every error MUST be recorded in `_shared\errors.md` before it is fixed.
 
 **Operating procedure:**
 
-**Step 1:** AI prepares a draft entry using this format:
+**Step 1:** Draft an entry using this format:
 ```
-### Error: [deskripsi singkat]
-- **Context:** sedang mengerjakan apa
-- **Symptom:** apa yang terlihat
-- **Root cause:** mengapa (atau "unknown — perlu investigasi")
-- **Fix:** apa yang menyelesaikannya (atau "pending")
+### Error: [short description]
+- **Context:** what was being worked on
+- **Symptom:** what was observed
+- **Root cause:** why it happened (or "unknown — needs investigation")
+- **Fix:** what resolved it (or "pending")
 - **Date:** YYYY-MM-DD
 ```
 
-**Step 2:** AI shows the draft to the human in chat/terminal.
+**Step 2:** Show the draft to the human in chat/terminal.
 
-**Step 3:** Human reviews and approves or edits it.
+**Step 3:** Human reviews and approves or edits.
 
-**Step 4:** After approval, append the entry to:
+**Step 4:** After approval, append to:
 - `_shared\errors.md` (Omega level), OR
 - `Projects\[nama]\_shared\errors.md` (project level)
 
-**Step 5:** Only after logging may the fix begin.
+**Step 5:** Only after logging may the fix proceed.
 
 **Who writes:** AI drafts, human approves. No silent writes. No ad-hoc formats.
 
@@ -117,7 +117,7 @@ Failure → save partial output → log → stop → ask the human to decide.
 Every CONTEXT.md must state its level on the first line.
 Format: `# CONTEXT.md — L{n} {Level Name} ({location})`
 
-Contoh:
+Example:
 ```
 # CONTEXT.md — L1 Pipeline Map (Projects/Quant-Lab/)
 # CONTEXT.md — L2 Stage Contract (01_research/)

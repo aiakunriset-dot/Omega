@@ -3,11 +3,11 @@
 You are at the Omega root. Read this table, then go to the appropriate destination.
 Read `_version.md` first to confirm compatibility.
 
-## Orientasi Cepat
+## Quick Start
 
 | I want to... | Go to |
 |---------------|----------|
-| Work on an active project | `Projects\[nama]\CLAUDE.md` |
+| Work on an active project | `Projects\[name]\CLAUDE.md` |
 | Create a new project | Copy `_templates\` → `Projects\[nama]\`, read `_shared\rules.md` |
 | View global rules | `_shared\rules.md` |
 | Select model / provider | `_shared\providers.md` |
@@ -25,23 +25,23 @@ Read `_version.md` first to confirm compatibility.
 ## Omega Commands (run from the project folder)
 
 ```powershell
-# Status semua stage
+# Status of all stages
 icm status .\Projects\Quant-Lab
 
-# Stage berikutnya
+# Next stage
 icm next .\Projects\Quant-Lab
 
-# Dashboard (open in browser)
+# Dashboard (opens in browser)
 icm dashboard .\Projects\Quant-Lab
 
-# Validasi struktur
+# Validate structure
 icm validate .\Projects\Quant-Lab --strict
 
 # Review stage output before approval
 icm review stages\01_research --workspace .\Projects\Quant-Lab
 
 # Record human approval
-icm accept stages\01_research --workspace .\Projects\Quant-Lab --reviewer [nama] --note "[catatan]"
+icm accept stages\01_research --workspace .\Projects\Quant-Lab --reviewer [name] --note "[notes]"
 ```
 
 ## Absolute Rules

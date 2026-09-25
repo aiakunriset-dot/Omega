@@ -19,10 +19,10 @@ has been validated and is ready for use.
 
 | Stage | Folder | Complete when |
 |-------|--------|--------------|
-| 1. Research | `01_research\` | `output\research-brief.md` ada |
-| 2. Development | `02_development\` | `output\strategy.py` ada |
-| 3. Audit | `03_audit\` | `output\audit-report.md` berisi `PASS` |
-| 4. Production | `04_production\` | `output\deployed.md` ada |
+| 1. Research | `01_research\` | `output\research-brief.md` exists |
+| 2. Development | `02_development\` | `output\strategy.py` exists |
+| 3. Audit | `03_audit\` | `output\audit-report.md` contains `PASS` |
+| 4. Production | `04_production\` | `output\deployed.md` exists |
 
 ## Human Gates (Mandatory)
 
