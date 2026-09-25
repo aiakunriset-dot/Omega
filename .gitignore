@@ -37,3 +37,4 @@ _logs/
 
 # Personal AI tool configs
 .aider.conf.yml
+.aider*
