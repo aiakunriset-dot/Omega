@@ -1,56 +1,23 @@
-# C:\Omega\ — Entry Point
+# Omega-Dev
 
-You are at the Omega root. Read this table, then go to the appropriate destination.
-Read `_version.md` first to confirm compatibility.
+## Purpose
+Research, design, and implement changes to Omega itself.
+Opened for specific decisions. Closed after implementation.
 
-## Quick Start
+## Status
+Active
 
-| I want to... | Go to |
-|---------------|----------|
-| Work on an active project | `Projects\[name]\CLAUDE.md` |
-| Create a new project | Copy `_templates\` → `Projects\[nama]\`, read `_shared\rules.md` |
-| View global rules | `_shared\rules.md` |
-| Select model / provider | `_shared\providers.md` |
-| Set up tools | `_tools.md` |
-| Review past errors | `_shared\errors.md` |
-| Review proven patterns | `_shared\patterns.md` |
-| Omega version | `_version.md` |
+## Navigate
+1. Read CONTEXT.md for pipeline.
+2. Enter stage: 01_research, 02_design, 03_validate, 04_implement.
 
-## Active Projects
+## Rules
+- Omega rules: ../../_shared/rules.md
+- Project SOUL: SOUL.md
 
-| Project | Folder | Description |
-|--------|--------|-----------|
-| Quant-Lab | `Projects\Quant-Lab\` | Trading strategy research & development |
+## Shared
+- _shared/notes.md — decision log
+- _shared/tools.md — tool evaluation registry
 
-## Omega Commands (run from the project folder)
-
-```powershell
-# Status of all stages
-icm status .\Projects\Quant-Lab
-
-# Next stage
-icm next .\Projects\Quant-Lab
-
-# Dashboard (opens in browser)
-icm dashboard .\Projects\Quant-Lab
-
-# Validate structure
-icm validate .\Projects\Quant-Lab --strict
-
-# Review stage output before approval
-icm review stages\01_research --workspace .\Projects\Quant-Lab
-
-# Record human approval
-icm accept stages\01_research --workspace .\Projects\Quant-Lab --reviewer [name] --note "[notes]"
-```
-
-## Absolute Rules
-
-1. Read the stage `CONTEXT.md` before doing anything
-2. Write output ONLY to the active stage's `output\`
-3. Nothing may be deleted without first logging it in `_shared\errors.md`
-4. Changes to `_shared\` require explicit human approval
-5. Do not use model names in CONTEXT.md or SKILL.md — use capability types
-
----
-*Omega v1.0 · 2026-09-23*
+## Output
+- Stage outputs: <stage>/output/
