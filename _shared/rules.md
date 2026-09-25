@@ -27,7 +27,7 @@ Every error MUST be recorded in `_shared\errors.md` before it is fixed.
 
 **Step 4:** After approval, append to:
 - `_shared\errors.md` (Omega level), OR
-- `Projects\[nama]\_shared\errors.md` (project level)
+- `Projects\[name]\_shared\errors.md` (project level)
 
 **Step 5:** Only after logging may the fix proceed.
 
